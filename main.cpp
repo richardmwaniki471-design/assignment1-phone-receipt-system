@@ -1,34 +1,34 @@
 #include <iostream>
+
 using namespace std;
 
 int main()
 {
-    string customername;
-    int phonemodel;
-    int quantity;
-    float phoneprice;
-    float totalsale;
+    string studentname;
+    float theorytestmarks;
+    float practicaltestmarks;
 
-    cout << "Enter customer name: ";
-    cin >> customername;
+    cout << "Enter student name" << endl;
+    cin >> studentname;
 
-    cout << "Enter phone model: ";
-    cin >> phonemodel;
+    cout <<"Enter theory test marks" <<endl;
+    cin >> theorytestmarks;
 
-    cout << "Quantity bought: ";
-    cin >> quantity;
+    cout <<"Enter practical test marks"<<endl;
+    cin >> practicaltestmarks;
 
-    cout << "Phone price: ";
-    cin >> phoneprice;
+    float averagescore;
+    averagescore=(theorytestmarks+practicaltestmarks)/2;
 
-    totalsale = quantity * phoneprice;
 
-    cout <<"=================================== ====================="<< endl;
-    cout << "Customer name: " << customername << endl;
-    cout << "Phone model: " << phonemodel << endl;
-    cout << "Quantity: " << quantity << endl;
-    cout << "Phone price: " << phoneprice << endl;
-    cout << "Total sale: " << totalsale << endl;
+
+    cout <<"student name :"<< studentname<<endl;
+    cout <<"theory test marks"<< theorytestmarks <<endl;
+    cout <<"practical test marks" <<practicaltestmarks<<endl;
+    cout <<"average score"<< averagescore<<endl;
+
+    if(averagescore>=50){cout <<"PASSED";}
+    else{cout <<"FAILED";}
 
     return 0;
 }
